@@ -1,0 +1,15 @@
+[Unit]
+Description=Movim daemon
+After=network.target
+
+[Service]
+User=www
+Type=simple
+ExecStart=/usr/bin/php daemon.php start --url=http://movim.ulyncbiz.com/ --port=8080
+WorkingDirectory=/home/wwwroot/movim/
+StandardOutput=syslog
+SyslogIdentifier=movim
+PIDFile=/run/movim.pid
+
+[Install]
+WantedBy=multi-user.target

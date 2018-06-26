@@ -1,0 +1,1 @@
+{'src/mod_lhc', [{outdir, "ebin"},{i,"/opt/ejabberd-17.08/lib/ejabberd-17.08/include/"}]}.
